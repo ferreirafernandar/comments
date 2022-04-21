@@ -1,0 +1,14 @@
+---
+- name: Install python3-docker
+  apt:
+    name: python3-docker
+    state: present
+    update_cache: yes
+
+- name: Run Comments API
+  docker_container:
+    name: comments-api
+    state: started
+    image: ferreirafernandar/comments-api:latest
+    ports:
+      - "8000:8000"
