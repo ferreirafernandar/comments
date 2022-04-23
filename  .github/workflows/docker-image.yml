@@ -21,7 +21,7 @@ jobs:
         password: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+      run: docker build . --file Dockerfile --tag ferreirafernandar/comments-api:$(date +%s)
 
     - name: Build and push Docker image
       id: build-and-push

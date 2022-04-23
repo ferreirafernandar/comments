@@ -1,10 +1,20 @@
-variable "prefix" {}
-variable "vpc_cidr_block" {}
-variable retention_days {}
-variable "desired_size" {}
-variable "max_size" {}
-variable "min_size" {}
+variable "prefix" {
+  description = "Prefix name of application"
+  type = string
+  default = "comments"
+}
 
+variable "instance_type" {
+  description = "Instace type in AWS"
+  type = string
+  default = "t2.micro"
+}
+
+variable "region" {
+  description = "Region in AWS"
+  type = string
+  default = "us-east-1"
+}
 
 variable "vpc_name" {
   description = "Comments VPC"
