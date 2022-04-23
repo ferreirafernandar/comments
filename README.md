@@ -1,28 +1,28 @@
 Para este projeto segui os passos abaixo:
 
-1 - Adiciona projeto enviado
-2 - Dockeriza projeto enviado
-3 - Criar imagem docker
-4 - Envia imagem para DockerHub
+- Adiciona projeto enviado
+- Dockeriza projeto enviado
+- Criar imagem docker
+- Envia imagem para DockerHub
 
-5 - Adiciona Terraform
-6 - Criar arquivo main.tf com modulos necessários para criação de uma instância EC2 na AWS
+- Adiciona Terraform
+- Criar arquivo main.tf com modulos necessários para criação de uma instância EC2 na AWS
 
-7 - Adiciona Ansible
-8 - Usa ansible-galaxy para criação de roles para: docker e comments-api
+- Adiciona Ansible
+- Usa ansible-galaxy para criação de roles para: docker e comments-api
 
-9 - Adiciona observabilidade com Prometheus
-10 - Cria docker-compose com: prometheus, grafana, cadvisor e redis
-11 - Cria prometheus.yml
-12 - Configura Promethues com jobs para: prometheus, cadvisor e comments-api
+- Adiciona observabilidade com Prometheus
+- Cria docker-compose com: prometheus, grafana, cadvisor e redis
+- Cria prometheus.yml
+- Configura Promethues com jobs para: prometheus, cadvisor e comments-api
 
-13 - Cria pipeline GitHub Actions para imagem Docker
+- Cria pipeline GitHub Actions para imagem Docker
 
 Para execução do projeto
 
-1 - Realizar exporte de AWS Access Key ID e AWS Secret Access Key para AWS CLI
-2 - Adicionar IP em ansible/hosts
-2 - Executar na raiz do projeto make all
+- Realizar exporte de AWS Access Key ID e AWS Secret Access Key para AWS CLI
+- Adicionar IP em ansible/hosts
+- Executar na raiz do projeto make all
 
 
 Observações:
