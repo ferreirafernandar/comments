@@ -3,4 +3,4 @@
   become: true
   roles:
     - install_docker
-    - init-comments-api
+    - comments-stack

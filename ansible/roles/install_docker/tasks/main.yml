@@ -31,7 +31,7 @@
       - containerd.io
     state: present
       
-- name: install docker-compose
+- name: Install docker-compose
   apt:
     name: docker-compose
     state: present
